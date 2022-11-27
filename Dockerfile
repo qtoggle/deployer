@@ -3,7 +3,7 @@ FROM ubuntu:22.10
 RUN export DEBIAN_FRONTEND=noninteractive \
     && apt update \
     && apt upgrade -y \
-    && apt install -y --no-install-recommends ca-certificates curl gnupg lsb-release
+    && apt install -y --no-install-recommends ca-certificates curl gnupg lsb-release git
 
 RUN mkdir -p /etc/apt/keyrings \
     && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg \
