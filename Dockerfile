@@ -13,5 +13,5 @@ RUN mkdir -p /etc/apt/keyrings \
     && apt install -y docker-ce-cli docker-compose-plugin openssh-client \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
     
-RUN curl -fsSL https://github.com/getsops/sops/releases/download/v3.8.1/sops-v3.8.1.linux.amd64 -o /usr/bin/sops \
-  && chmod +x /usr/bin/sops
+RUN curl -fsSL https://github.com/getsops/sops/releases/download/v3.11.0/sops-v3.11.0.linux.amd64 -o /usr/bin/sops \
+    && chmod +x /usr/bin/sops
